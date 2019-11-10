@@ -7,10 +7,11 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Pagina de inicio</title>
+        <title>Produccion</title>
         <?php
             include('componentes/enlaces.php');
         ?>
+        <script type="text/javascript" src="resources/js/consulta_lote.js"></script>
     </head>
     <body>
         <div>
@@ -22,11 +23,11 @@ and open the template in the editor.
             <img src="componentes/produccion.jpg" width="300" height="500">
         </div>
         <div>
-            <div>
-                <?php
-                    include('vistas/estadoProduccion.php');
-                ?>
-            </div>
-        </div>
+            <section>
+                <input type="text" name="buscarLote" id="buscarLote" placeholder="Buscar lote">
+            </section>
+            <section id="tabla_lote">
+                
+            </section>
     </body>
 </html>
