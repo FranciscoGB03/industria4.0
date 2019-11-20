@@ -17,11 +17,14 @@ and open the template in the editor.
         
 <div class='form-centrado form-group' align="center">
 	<fieldset>
-		<legend align='center'>Temperatura</legend><br> 
-<!--                <input type="submit" id="enviar" name="enviar" value="Actualizar">                -->
 
+            <div></div>
+            
+            <div>
+                <legend align='center'>Temperatura</legend><br>
+            </div>
 			<button id="enviar" type='submit' class='btn btn-outline-success' >Actualizar</button>
-		                
+                        		                
                         
         <div class="div-centrado">
             <div id="tabla"> 
