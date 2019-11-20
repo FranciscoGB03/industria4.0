@@ -2,11 +2,7 @@
 	require("../modelo/Conexion.php");
 
 	$query = new Conexion();
-	$consulta = $query->ConsultaUsuario('lote', 'ID is not null');
-
-	if(isset($_POST['lote'])){
-		$consulta = $query->ConsultaUsuario('lote', 'ID=' .$_POST['lote'] );
-	}
+	$consulta = $query->Consulta('lote');
 
 	$tabla = "";
 
@@ -24,9 +20,9 @@
 		while($filaLote = $consulta->fetch_assoc()){
 			$tabla.="<tr>
 						<th scope='row'>".$filaLote['ID']."</th>
-						<td align='center'>".$filaLote['PapasBuenEdo']."</td>
-						<td align='center'>".$filaLote['PapasMalEdo']."</td>
-						<td align='center'>".$filaLote['Latas']."</td>
+						<td align='center'>".$filaLote['papaBuenEdo']."</td>
+						<td align='center'>".$filaLote['papaMalEdo']."</td>
+						<td align='center'>".$filaLote['lata']."</td>
 					</tr>";
 		}
 
