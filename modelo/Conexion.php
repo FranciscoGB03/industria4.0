@@ -67,6 +67,21 @@ class Conexion {
         }         
         $conex->CloseConnection();
     }
+    
+     public function Consulta($tabla) {
+        $conex = new Conexion();
+        $conex->CreateConnection();
+        $query = "SELECT * FROM " . $tabla;
+        $result = $conex->ExecuteQuery($query);        
+//        if ($result->num_rows > 0) { //si la variable tiene al menos 1 fila entonces seguimos con el codigo
+//           $res=$result->fetch_assoc();
+//           $conex->CloseConnection();
+//           return $res;
+//        }  
+        $conex->CloseConnection();
+        
+        return $result;
+    }
 
     public function Insert($tabla, $campos, $valores) {
         $conex = new Conexion();

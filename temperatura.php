@@ -7,6 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
+       
         <title>Temperatura</title>
         <?php
             include('componentes/enlaces.php');
@@ -15,6 +16,16 @@ and open the template in the editor.
     <body>
         <?php
             include('vistas/navbar.php');          
-        ?>        
+        ?>  
+        
+        <div class="div-centrado">
+            <div><!--parte central-->
+               <!-- Prueba de commit por fer--> 
+                <?php
+                include('vistas/temp.php');
+                ?>
+            </div>
+        </div>
+        
     </body>
 </html>
