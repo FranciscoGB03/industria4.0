@@ -28,13 +28,13 @@
         <script>
         $(document).ready(function(){
               $.post("control/status.php",function(datos){
-                  $("#tabla").html(datos);
+                  $("#tabla2").html(datos);
               });            
         });
         </script>
         
         <div>
-            <div id="tabla"> 
+            <div id="tabla2"> 
               
             </div>
         </div>
