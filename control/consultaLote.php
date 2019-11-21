@@ -19,7 +19,7 @@
 					<tbody>";
 		while($filaLote = $consulta->fetch_assoc()){
 			$tabla.="<tr>
-						<th scope='row'>".$filaLote['ID']."</th>
+						<th scope='row'>".$filaLote['id']."</th>
 						<td align='center'>".$filaLote['papaBuenEdo']."</td>
 						<td align='center'>".$filaLote['papaMalEdo']."</td>
 						<td align='center'>".$filaLote['lata']."</td>

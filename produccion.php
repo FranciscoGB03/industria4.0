@@ -11,14 +11,6 @@ and open the template in the editor.
         <?php
             include('componentes/enlaces.php');
         ?>
-        <!--<script type="text/javascript" src="resources/js/consulta_lote.js"></script>-->
-        <script>
-        $(document).ready(function(){
-              $.post("control/consulta_lote.php",function(datos){
-                  $("#tabla_lote").html(datos);
-              });            
-        });
-        </script>
     </head>
     <body>
         <div>
@@ -26,15 +18,9 @@ and open the template in the editor.
                 include('vistas/navbar.php');
             ?>
         </div>
-        <div align="center">
-            <img src="componentes/produccion.jpg" width="300" height="500">
-        </div>
         <div>
-            <!--<section>
-                <input type="text" name="buscarLote" id="buscarLote" placeholder="Buscar lote">
-            </section>-->
-            <section id="tabla_lote">
-                
-            </section>
+            <?php
+                include('vistas/estadoProduccion.php');
+            ?>
     </body>
 </html>
