@@ -4,7 +4,7 @@ require("../modelo/Conexion.php");
 // Creamos una nueva instancia
 $query = new Conexion();
 //Creacion de variables
-$consulta = $query->Consulta('temperatura');
+$consulta = $query->Consulta('temperatura'); 
  
 $tabla = "";
 

@@ -12,6 +12,17 @@ and open the template in the editor.
                   $("#tabla").html(datos);
               });  
             });            
+        });        
+       
+        </script>
+        
+        <script>
+          $(document).ready(function(){
+            $("#enviar").click(function(){
+              $.post("control/alerta.php",function(datos){
+                  $("temperatura.php/#texto").html(datos);
+              });  
+            });            
         });
         </script>
         
@@ -24,8 +35,8 @@ and open the template in the editor.
                 <legend align='center'>Temperatura</legend><br>
             </div>
 			<button id="enviar" type='submit' class='btn btn-outline-success' >Actualizar</button>
-                        		                
                         
+           		                                   
         <div class="div-centrado">
             <div id="tabla"> 
               

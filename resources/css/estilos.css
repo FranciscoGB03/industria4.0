@@ -14,6 +14,25 @@
     flex-direction: column;
 }
 
+#cerrarventana{
+    position: absolute;
+    right: 72%;
+}
+
+.ventana{
+    background: papayawhip;
+    width: 30%;
+    color: #000;
+    font-family: cursive;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 25px;
+    display: none;
+    
+}
+
 .form-centrado{
     display: flex;
 }

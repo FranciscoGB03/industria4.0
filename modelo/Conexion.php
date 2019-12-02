@@ -72,12 +72,17 @@ class Conexion {
         $conex = new Conexion();
         $conex->CreateConnection();
         $query = "SELECT * FROM " . $tabla;
-        $result = $conex->ExecuteQuery($query);        
-//        if ($result->num_rows > 0) { //si la variable tiene al menos 1 fila entonces seguimos con el codigo
-//           $res=$result->fetch_assoc();
-//           $conex->CloseConnection();
-//           return $res;
-//        }  
+        $result = $conex->ExecuteQuery($query);  
+        $conex->CloseConnection();
+        
+        return $result;
+    }
+//    
+     public function ConsultaAlerta($tabla) {
+        $conex = new Conexion();
+        $conex->CreateConnection();
+        $query = "SELECT estado FROM" .$tabla."ORDER BY id DESC LIMIT 1";
+        $result = $conex->ExecuteQuery($query);  
         $conex->CloseConnection();
         
         return $result;
