@@ -12,7 +12,6 @@ if ($consulta->num_rows > 0) {
     $tabla .= "<table class='table table-bordered table-hover'>
 					<thead>
 						<tr class='table-warning'>
-							<td align='center'><b>ID</b></td>
 							<td align='center'><b>Contador</b></td>
 							<td align='center'><b>Maquinaria</b></td>
                                                         <td align='center'><b>Fecha</b></td>
@@ -21,10 +20,9 @@ if ($consulta->num_rows > 0) {
 					<tbody>";
     while ($filamaq = $consulta->fetch_assoc()) {
         $tabla .= "<tr>
-						<th scope='row'>" . $filamaq['id'] . "</th>
-						<td align='center'>" . $filamaq['cont'] . "</td>
-						<td align='center'>" . $filamaq['maquinaria'] . "</td>
-                                                <td align='center'>" . $filamaq['fecha'] . "</td>
+						<td align='center'>" . $filamaq['status.cont'] . "</td>
+						<td align='center'>" . $filamaq['maquinaria.nombre'] . "</td>
+                                                <td align='center'>" . $filamaq['status.fecha'] . "</td>
 					</tr>";
     }
 
