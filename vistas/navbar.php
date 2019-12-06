@@ -17,6 +17,9 @@
             <li class = "nav-item active">
                 <a class = "nav-link white-text" href = "temperatura.php">Temperatura</a>
             </li>
+            <li class = "nav-item active">
+                <a class = "nav-link white-text" href = "pantallaServicio.php">Servicio</a>
+            </li>
         </ul>
         <ul class = "navbar-nav nav-izq">
             <li class = "nav-item active">
