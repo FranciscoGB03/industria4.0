@@ -77,6 +77,17 @@ class Conexion {
         
         return $result;
     }
+    
+    public function ConsultaStatus() {
+        $conex = new Conexion();
+        $conex->CreateConnection();
+        $query = "SELECT status.cont,maquinaria.nombre FROM status,maquinaria WHERE status.maquinaria=maquinaria.id ORDER BY id DESC LIMIT 10";
+        $result = $conex->ExecuteQuery($query);  
+        $conex->CloseConnection();
+        
+        return $result;
+    }
+    
 //    
      public function ConsultaAlerta($tabla) {
         $conex = new Conexion();
