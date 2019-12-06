@@ -10,7 +10,7 @@
 		$tabla.="<table class='table table-bordered table-hover'>
 					<thead>
 						<tr class='table-warning'>
-							<td align='center'>
+							<td align='center' colspan='4'>
 								<b>LOTES REGISTRADOS</b>
 							</td>
 						</tr>
@@ -37,7 +37,7 @@
 		$tabla="<table class='table table-bordered table-hover'>
 					<thead>
 						<tr class='table-warning'>
-							<td align='center'>
+							<td align='center' colspan='4'>
 								<b>LOTES REGISTRADOS</b>
 							</td>
 						</tr>
