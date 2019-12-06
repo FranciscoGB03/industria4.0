@@ -8,10 +8,20 @@
         ?>
     </head>
     <body>
-        <?php
-            include('vistas/navbar.php');
-            include('vistas/estadoMaquinaria.php');
-            include('vistas/estadoProduccion.php');            
-        ?>        
+        <div>
+            <?php
+                include('vistas/navbar.php');            
+            ?>  
+        </div>
+        <div>
+            <?php
+                include('vistas/estadoMaquinaria.php');           
+            ?>  
+        </div>
+        <div>
+            <?php
+                include('vistas/estadoProduccion.php');            
+            ?>  
+        </div>          
     </body>
 </html>
