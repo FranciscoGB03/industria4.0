@@ -29,10 +29,7 @@ and open the template in the editor.
             </div>
             <div>
                 <?php
-                    while(true){
-                        include('vistas/estadoMaquinaria.php');
-                        sleep(10000);
-                    }
+                    include('vistas/estadoMaquinaria.php');
                 ?>
             </div>
         </div>
