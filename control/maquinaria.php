@@ -12,6 +12,11 @@ if ($consulta->num_rows > 0) {
     $tabla .= "<table class='table table-bordered table-hover'>
 					<thead>
 						<tr class='table-warning'>
+							<td align='center' colspan='2'>
+								<b>MAQUINARIA</b>
+							</td>
+						</tr>
+						<tr class='table-warning'>
 							<td align='center'><b>Nombre</b></td>
 							<td align='center'><b>Límite</b></td>
 						</tr>
@@ -27,7 +32,21 @@ if ($consulta->num_rows > 0) {
     $tabla .= "	</tbody>
 				</table";
 } else {
-    $tabla = "SIN DATOS";
+    $tabla = "<table class='table table-bordered table-hover'>
+					<thead>
+						<tr class='table-warning'>
+							<td align='center' colspan='2'>
+								<b>MAQUINARIA</b>
+							</td>
+						</tr>
+						<tr class='table-warning'>
+							<td align='center'><b>Nombre</b></td>
+							<td align='center'><b>Límite</b></td>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					</table";
 }
 
 echo $tabla;
