@@ -71,7 +71,7 @@ class Conexion {
      public function Consulta($tabla) {
         $conex = new Conexion();
         $conex->CreateConnection();
-        $query = "SELECT * FROM " . $tabla;
+        $query = "SELECT * FROM " . $tabla . "ORDER BY id DESC LIMIT 10";
         $result = $conex->ExecuteQuery($query);  
         $conex->CloseConnection();
         
