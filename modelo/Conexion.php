@@ -91,7 +91,7 @@ class Conexion {
     public function ConsultaStatus() {
         $conex = new Conexion();
         $conex->CreateConnection();
-        $query = "SELECT status.cont,maquinaria.nombre FROM status,maquinaria WHERE status.maquinaria=maquinaria.id ORDER BY status.id DESC LIMIT 10";
+        $query = "SELECT count(status.cont) as conteo,maquinaria.nombre FROM status,maquinaria WHERE status.maquinaria=maquinaria.id GROUP BY maquinaria.nombre DESC LIMIT 10";
         $result = $conex->ExecuteQuery($query);  
         $conex->CloseConnection();
         
