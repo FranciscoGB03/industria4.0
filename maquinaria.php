@@ -24,12 +24,15 @@ and open the template in the editor.
             </div>        
             <div>
                 <?php
-                include('vistas/estandarMaquinaria.php');
+                    include('vistas/estandarMaquinaria.php');
                 ?>
             </div>
             <div>
                 <?php
-                include('vistas/estadoMaquinaria.php');
+                    while(true){
+                        include('vistas/estadoMaquinaria.php');
+                        sleep(10000);
+                    }
                 ?>
             </div>
         </div>
