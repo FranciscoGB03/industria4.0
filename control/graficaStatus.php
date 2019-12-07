@@ -10,11 +10,11 @@ $array = array();
 
 if ($consulta->num_rows > 0) {
     while ($filamaq = $consulta->fetch_assoc()) {
-    	$point = array("contador" => $filamaq['cont']);
+    	$point = array($filamaq['conteo']);
     	array_push($array, $point);
     }
 }else{
-	$point = array("contador" => 0,"contador" => 0,"contador" => 0,"contador" => 0);
+	$point = array(0,0,0,0);
 	array_push($array,$point);
 }
 
