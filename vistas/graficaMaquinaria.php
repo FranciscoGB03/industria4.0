@@ -6,10 +6,11 @@
             var conteos = [];
 
             $.getJSON("control/graficaStatus.php",function(resultado){
+              conteos = resultado;
               cont = resultado.length;
 
-              for (var i = 0 ; i < cont ; i++) {
-                conteos.push(resultado[i].contador);
+              for (var i = cont ; i < 4 ; i++) {
+                conteos.push(0);
               }
             });
 
