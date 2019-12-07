@@ -24,7 +24,7 @@ if ($consulta->num_rows > 0) {
 					<tbody>";
     while ($filamaq = $consulta->fetch_assoc()) {
         $tabla .= "<tr>
-						<td align='center'>" . $filamaq['cont'] . "</td>
+						<td align='center'>" . $filamaq['conteo'] . "</td>
 						<td align='center'>" . $filamaq['nombre'] . "</td>
 					</tr>";
     }
