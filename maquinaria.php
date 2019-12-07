@@ -32,6 +32,11 @@ and open the template in the editor.
                     include('vistas/estadoMaquinaria.php');
                 ?>
             </div>
+            <div>
+                <?php
+                    include('vistas/graficaMaquinaria.php');
+                ?>
+            </div>
         </div>
     </body>
 </html>
