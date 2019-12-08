@@ -118,6 +118,16 @@ class Conexion {
         $conex->CloseConnection();
         return $resultado;
     }
+    
+    public function Update($tabla, $campo, $valor_nuevo,$condicion){
+        $conex = new Conexion();
+        $conex->CreateConnection();
+        $query = "UPDATE " . $tabla . " SET ". $campo . "= ".$valor_nuevo." WHERE ".$condicion.";";        
+        /* @var $result type */
+        $resultado = $conex->ExecuteQuery($query);
+        $conex->CloseConnection();
+        return $resultado;
+    }
 
 }
 
