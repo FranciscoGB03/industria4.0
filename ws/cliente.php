@@ -1,6 +1,10 @@
 <?php
-        
-   $direccion=$_POST['ip'];
+   require_once '../modelo/Conexion.php';
+   $query=new Conexion();
+   $tabla='cliente';
+   $condition='id=1';
+   $consulta=$query->ConsultaUsuario($tabla, $condition);   
+   $ip=$consulta['ip'];
    $client = new SoapClient(null, 
     array('location'=>$ip, 
         'uri' => $ip,

@@ -11,16 +11,12 @@
                 include('vistas/navbar.php');
             ?>
         </div>
-        <div class="d-flex justify-content-between mx-5">
+        <div class="d-flex justify-content-center mx-5">
             <div>
-                <?php
-                    include('vistas/servicioWebServidor.php');
-                ?>
-            </div>
-            <div>
-                <?php
-                    include('vistas/servicioWebCliente.php');
-                ?>
+                <h2>Enviar datos a Empaquetado</h2>
+                <form action="./ws/cliente.php">
+                    <input type="submit" class="btn btn-outline-success" value="Enviar datos">                    
+                </form>
             </div>
         </div>
     </body>
