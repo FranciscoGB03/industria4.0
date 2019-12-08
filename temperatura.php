@@ -16,16 +16,10 @@ and open the template in the editor.
     <body>
         <?php
         include('vistas/navbar.php');
-        ?>  
-
-        <div class="ventana" id="alerta">
-            <div id="cerrarventana">
-                <a href="javascript:cerrarven()"><img src="componentes/error.png"></a>
-            </div>
-            Alerta
-            <p id="texto"></p>
+        ?> 
+        <div id="alerta">
+            
         </div>
-
         <div class="div-centrado">
             <div><!--parte central-->
                 <!-- Prueba de commit por fer--> 
@@ -34,15 +28,5 @@ and open the template in the editor.
                 ?>
             </div>
         </div>
-
-        <script>
-           
-           window.onload = function alerta(){
-                
-                document.getElementById(alerta).style.display="block";
-            
-           }
-        </script>
-
     </body>
 </html>

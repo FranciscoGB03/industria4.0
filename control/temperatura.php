@@ -15,6 +15,7 @@ if ($consulta->num_rows > 0) {
 							<td align='center'><b>ID</b></td>
 							<td align='center'><b>Temperatura</b></td>
 							<td align='center'><b>Estado</b></td>
+                                                        <td align='center'><b>Fecha</b></td> 
 						</tr>
 					</thead>
 					<tbody>";
@@ -23,6 +24,7 @@ if ($consulta->num_rows > 0) {
 						<th scope='row'>" . $filatemp['id'] . "</th>
 						<td align='center'>" . $filatemp['temperatura'] . "</td>
 						<td align='center'>" . $filatemp['estado'] . "</td>
+                                                <td align='center'>" . $filatemp['fecha'] . "</td>
 					</tr>";
     }
 
