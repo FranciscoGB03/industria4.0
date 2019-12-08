@@ -34,7 +34,13 @@
                 }]
               }
             });
+                  
+                  setTimeout(refrescar, 10000);
           });
+                
+                function refrescar(){
+                    location.reload();
+                  }
         </script>
         
         <div>
