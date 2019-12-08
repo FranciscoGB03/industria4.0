@@ -6,10 +6,9 @@ require_once '../modelo/Conexion.php';
    $tabla='servidor';
    $condition='id=1';
    $consulta=$query->ConsultaUsuario($tabla, $condition);   
-   $ip=$consulta['ip'];
-   echo 'soy el servidor';
-try {
-    echo "<h1>entre al try hola</h1>";
+   $ip=$consulta['ip'];   
+   //echo "<script>console.log('ip de servidor: ".$ip."')</script>";
+try {    
     $server = new SoapServer(
             null,array('uri' => $ip));
     $server->setClass('Prueba');

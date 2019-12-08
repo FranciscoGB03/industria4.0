@@ -81,7 +81,7 @@ class Conexion {
     public function ConsultaLote() {
         $conex = new Conexion();
         $conex->CreateConnection();
-        $query = "SELECT numLote, sum(if(papaBuenEdo=1,papaBuenEdo,0)) AS papaB, sum(if(papaMalEdo=1,papaMalEdo,0)) AS papaM, sum(if(lata=1,lata,0)) AS lata FROM lote GROUP BY numLote;";
+        $query = "SELECT numLote, sum(if(papaBuenEdo!=0,papaBuenEdo,0)) AS papaB, sum(if(papaMalEdo!=0,papaMalEdo,0)) AS papaM, sum(if(lata!=0,lata,0)) AS lata FROM lote GROUP BY numLote;";
         $result = $conex->ExecuteQuery($query);  
         $conex->CloseConnection();
         

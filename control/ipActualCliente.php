@@ -9,7 +9,7 @@ $condition = 'id=1';
 $consulta = $query->ConsultaUsuario($tabla, $condition);
 echo "<div class='d-flex flex-column'>";
 echo "<div>";
-echo "<strong>ip cliente actual:&nbsp;<strong>" . $consulta['ip'];
+echo "<strong>ip servidor externo actual:&nbsp;<strong>" . $consulta['ip'];
 echo "</div>";
 echo "<div>";
 echo "<strong>Última actualizacion:<strong>" . $consulta['fecha'];

@@ -3,7 +3,7 @@
         <fieldset>
             <legend align='center'>Configuración como Cliente</legend><br>                
             <form autocomplete='off' method='POST' action='control/ipcliente.php'>
-                <input type='text' class='form-control-lg' id='ipCliente' name='ipCliente' placeholder='IP de cliente'><br><br>
+                <input type='text' class='form-control-lg' id='ipCliente' name='ipCliente' placeholder='IP de servidor externo'><br><br>
                 <button type='submit' class='btn btn-outline-success'>Enviar</button>
             </form>
         </fieldset>

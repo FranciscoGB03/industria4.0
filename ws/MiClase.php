@@ -7,10 +7,13 @@ class Prueba{
     public function ejemplo2($mensaje){
         return $mensaje;
     }
-    public function datos($numLote){
+    public function datos($numLote, $cantPapaBuena){        
         $query=new Conexion();
-        $query->Insert($tabla, $campos, $valores);
-        
+        $tabla='lote';
+        $campos='papaBuenEdo,numlote';
+        $valores=$cantPapaBuena.",".$numLote;
+        $resultado=$query->Insert($tabla, $campos, $valores);        
+        return $resultado;
     }
 }
 ?>

@@ -10,7 +10,15 @@
         'uri' => $ip,
         'trace'=>1 ));
    try{
-    echo $return=$client->__soapCall("saludar",["Montse"]);
+    $return=$client->__soapCall("datos",[2,15]);
+    if ($return==1){
+        echo "<script>alert('envio de datos correctamente!')</script>";
+        echo "<script>window.location='../pantallaServicio.php'</script>";        
+    }else{
+        echo "<script>alert('ocurrió un error, favor de checar su configuración!')</script>";
+        echo "<script>window.location='../pantallaServicio.php'</script>";        
+    }
+    
    }catch(SoapFault $f){
         //echo $f->getMessage().PHP_EOL;
         print($client->__getLastResponse());
