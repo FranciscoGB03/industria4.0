@@ -98,6 +98,26 @@ class Conexion {
         return $result;
     }
     
+    public function ConsultaUltimoLote() {
+        $conex = new Conexion();
+        $conex->CreateConnection();
+        $query = "select numLote from lote where id = (select MAX(id) from lote)";
+        $result = $conex->ExecuteQuery($query);  
+        $conex->CloseConnection();
+        
+        return $result;
+    }
+    
+    public function ConsultaLataUltimoLote() {
+        $conex = new Conexion();
+        $conex->CreateConnection();
+        $query = "select sum(if(lata=1,lata,0)) as lata from lote where numLote = (select numLote from lote where id = (select MAX(id) from lote))";
+        $result = $conex->ExecuteQuery($query);  
+        $conex->CloseConnection();
+        
+        return $result;
+    }
+    
 //    
      public function ConsultaAlerta($tabla) {
         $conex = new Conexion();
