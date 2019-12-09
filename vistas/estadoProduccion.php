@@ -3,8 +3,14 @@
         $(document).ready(function(){
               $.post("control/consultaLote.php",function(datos){
                   $("#tabla3").html(datos);
-              });            
+              }); 
+                
+                setTimeout(refrescar, 10000); 
         });
+                
+                function refrescar(){
+                        location.reload();
+                }
         </script>
         
         <div>
