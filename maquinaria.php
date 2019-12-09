@@ -13,7 +13,7 @@ and open the template in the editor.
         ?>
     </head>
     <body>
-        <div>
+        <div class="sticky-top">
             <?php
             include('vistas/navbar.php');
             ?>

@@ -14,9 +14,11 @@ and open the template in the editor.
         ?>
     </head>
     <body>
+        <div class="sticky-top">
         <?php
         include('vistas/navbar.php');
         ?> 
+        </div>
         <div id="alerta">
             
         </div>

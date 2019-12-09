@@ -6,7 +6,7 @@
         <?php include("componentes/enlaces.php"); ?>
     </head>
     <body>
-        <div>
+        <div class="sticky-top">
             <?php
                 include('vistas/navbar.php');
             ?>
